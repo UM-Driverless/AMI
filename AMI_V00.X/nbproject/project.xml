@@ -6,9 +6,9 @@
             <name>AMI_V00</name>
             <creation-uuid>5f150ff2-fee1-427d-8e91-289c5ab1d806</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions/>
+            <c-extensions>c</c-extensions>
             <cpp-extensions/>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
