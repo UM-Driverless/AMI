@@ -171,6 +171,7 @@ void UART1_Write(uint8_t txData)
 {
     while(0 == PIR4bits.U1TXIF)
     {
+        //txData = dato en UART
     }
 
     U1TXB = txData;    // Write the data byte to the USART.

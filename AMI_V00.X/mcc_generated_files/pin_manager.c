@@ -117,11 +117,37 @@ void PIN_MANAGER_Initialize(void)
     CANRXPPS = 0x0B;   //RB3->CAN1:CANRX;    
     RB4PPS = 0x46;   //RB4->CAN1:CANTX;    
     RC6PPS = 0x20;   //RC6->UART1:TX1;    
-    U1RXPPS = 0x17;   //RC7->UART1:RX1;    
+    U1RXPPS = 0x17;   //RC7->UART1:RX1;   
+    
+    STBY_SetHigh();  //Stby Driver Can True
+    BotonPressed();
 }
   
 void PIN_MANAGER_IOC(void)
 {   
+}
+
+void BotonPressed(void){
+    while(1){
+     
+        if(BOTON1_GetValue() == 1){
+            //Do Something
+            BOTON1_SetLow();
+        }
+        if(BOTON2_GetValue() == 1){
+            //Do Something
+            BOTON2_SetLow();
+        }
+        if(BOTON3_GetValue() == 1){
+            //Do Something
+            BOTON3_SetLow();
+        }
+        if(BOTON4_GetValue() == 1){
+            //Do Something
+            BOTON4_SetLow();
+        }
+        
+    }
 }
 
 /**

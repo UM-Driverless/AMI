@@ -1,0 +1,779 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\AMI_V00.X.production.o
+cinit CODE 0 291A 291A 8 1
+idloc IDLOC 5 200000 200000 20 1
+text0 CODE 0 28C8 28C8 C 1
+text1 CODE 0 2882 2882 1A 1
+text2 CODE 0 27AE 27AE 68 1
+text3 CODE 0 28D4 28D4 A 1
+text4 CODE 0 28DE 28DE A 1
+text5 CODE 0 28E8 28E8 A 1
+text6 CODE 0 285A 285A 28 1
+text7 CODE 0 2742 2742 6C 1
+text8 CODE 0 289C 289C 18 1
+text9 CODE 0 2816 2816 44 1
+nvCOMRAM COMRAM 1 501 501 C 1
+text10 CODE 0 26BA 26BA 88 1
+text11 CODE 0 28F2 28F2 A 1
+text12 CODE 0 28B4 28B4 14 1
+text13 CODE 0 260E 260E AC 1
+text14 CODE 0 28FC 28FC A 1
+text15 CODE 0 2906 2906 A 1
+text16 CODE 0 2910 2910 A 1
+cstackCOMRAM COMRAM 1 50D 50D 3 1
+smallconst SMALLCONST 0 2600 2600 E 1
+bssCOMRAM COMRAM 1 510 510 1 1
+config CONFIG 4 300000 300000 24 1
+$C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+idloc IDLOC 5 200000 200000 20 1
+init CODE 0 FFFC FFFC 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 24 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-25FF 1
+SFR 0-4FF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-25FF 1
+CONST 2922-FFFB 1
+STACK 560-25FF 1
+SMALLCONST 2922-FFFB 1
+CODE 4-25FF 1
+CODE 2922-FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BIGRAM 511-25FF 1
+COMRAM 511-55F 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 2922-FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\AMI_V00.X.production.o
+2910 text16 CODE >418:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2910 text16 CODE >420:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2918 text16 CODE >421:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2906 text15 CODE >428:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2906 text15 CODE >430:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+290E text15 CODE >431:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+28FC text14 CODE >423:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+28FC text14 CODE >425:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2904 text14 CODE >426:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+260E text13 CODE >65:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+260E text13 CODE >68:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2614 text13 CODE >71:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2618 text13 CODE >74:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+261C text13 CODE >80:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2620 text13 CODE >83:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2624 text13 CODE >86:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2628 text13 CODE >89:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+262C text13 CODE >92:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2630 text13 CODE >95:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2634 text13 CODE >98:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2638 text13 CODE >101:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+263C text13 CODE >104:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2640 text13 CODE >107:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2644 text13 CODE >110:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2648 text13 CODE >113:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+264C text13 CODE >116:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2650 text13 CODE >119:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2654 text13 CODE >122:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2658 text13 CODE >125:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+265C text13 CODE >128:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2660 text13 CODE >131:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2664 text13 CODE >134:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2668 text13 CODE >137:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+266C text13 CODE >140:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2670 text13 CODE >143:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2674 text13 CODE >146:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2678 text13 CODE >149:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+267C text13 CODE >152:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2680 text13 CODE >155:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2684 text13 CODE >158:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+2688 text13 CODE >161:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+268A text13 CODE >164:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+268C text13 CODE >167:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+268E text13 CODE >171:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+269A text13 CODE >172:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+26A6 text13 CODE >173:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+26B2 text13 CODE >176:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+26B8 text13 CODE >177:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/adc.c
+28B4 text12 CODE >88:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28B4 text12 CODE >91:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28BA text12 CODE >94:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28BE text12 CODE >97:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28C2 text12 CODE >100:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28C6 text12 CODE >102:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28F2 text11 CODE >158:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28F2 text11 CODE >160:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+28FA text11 CODE >161:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+26BA text10 CODE >129:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+26BC text10 CODE >131:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+26C0 text10 CODE >132:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+26C6 text10 CODE >134:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+26FA text10 CODE >138:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2706 text10 CODE >140:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+270A text10 CODE >143:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2718 text10 CODE >145:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+271C text10 CODE >146:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2720 text10 CODE >140:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+273A text10 CODE >152:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+273E text10 CODE >153:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+273E text10 CODE >155:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2740 text10 CODE >156:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2816 text9 CODE >105:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2816 text9 CODE >108:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+281A text9 CODE >110:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2830 text9 CODE >113:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2842 text9 CODE >116:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2846 text9 CODE >119:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+284A text9 CODE >122:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+284E text9 CODE >124:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2852 text9 CODE >125:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+2858 text9 CODE >127:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/can1.c
+289C text8 CODE >60:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+289C text8 CODE >63:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28A2 text8 CODE >65:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28A6 text8 CODE >67:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28AA text8 CODE >69:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28AE text8 CODE >71:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28B2 text8 CODE >72:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2742 text7 CODE >55:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2742 text7 CODE >60:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2746 text7 CODE >61:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+274A text7 CODE >62:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+274E text7 CODE >67:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2752 text7 CODE >68:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2754 text7 CODE >69:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2758 text7 CODE >70:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+275C text7 CODE >75:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2762 text7 CODE >76:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2766 text7 CODE >77:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+276A text7 CODE >82:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+276E text7 CODE >83:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2772 text7 CODE >84:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2776 text7 CODE >85:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+277A text7 CODE >90:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+277E text7 CODE >91:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2782 text7 CODE >92:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2786 text7 CODE >97:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2788 text7 CODE >98:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+278A text7 CODE >99:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+278C text7 CODE >104:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+278E text7 CODE >105:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2790 text7 CODE >106:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2792 text7 CODE >107:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+2796 text7 CODE >116:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+279C text7 CODE >117:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+27A0 text7 CODE >118:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+27A4 text7 CODE >119:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+27A8 text7 CODE >120:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+27AC text7 CODE >121:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/pin_manager.c
+285A text6 CODE >74:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+285A text6 CODE >77:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2860 text6 CODE >79:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2864 text6 CODE >81:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2868 text6 CODE >83:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+286C text6 CODE >85:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2870 text6 CODE >87:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2874 text6 CODE >89:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2878 text6 CODE >91:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+287C text6 CODE >93:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2880 text6 CODE >94:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28E8 text5 CODE >198:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28E8 text5 CODE >199:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28F0 text5 CODE >200:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28DE text4 CODE >190:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28DE text4 CODE >191:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28E6 text4 CODE >192:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28D4 text3 CODE >194:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28D4 text3 CODE >195:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+28DC text3 CODE >196:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27AE text2 CODE >66:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27AE text2 CODE >73:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27B4 text2 CODE >76:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27B8 text2 CODE >79:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27BC text2 CODE >82:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27C0 text2 CODE >85:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27C4 text2 CODE >88:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27C8 text2 CODE >91:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27CC text2 CODE >94:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27D0 text2 CODE >97:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27D4 text2 CODE >100:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27D8 text2 CODE >103:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27DC text2 CODE >106:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27E0 text2 CODE >109:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27E4 text2 CODE >112:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27E8 text2 CODE >115:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27EC text2 CODE >118:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+27F8 text2 CODE >119:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+2804 text2 CODE >120:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+2810 text2 CODE >122:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+2814 text2 CODE >124:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/uart1.c
+2882 text1 CODE >50:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2882 text1 CODE >52:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2886 text1 CODE >53:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+288A text1 CODE >54:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+288E text1 CODE >55:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2892 text1 CODE >56:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+2896 text1 CODE >57:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+289A text1 CODE >58:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\mcc_generated_files/mcc.c
+28C8 text0 CODE >49:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\main.c
+28C8 text0 CODE >52:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\main.c
+28CC text0 CODE >64:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\main.c
+28CC text0 CODE >67:D:\Driverless_PIC18\GithubAmi\AMI\AMI_V00.X\main.c
+291A cinit CODE >14575:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291A cinit CODE >14577:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291A cinit CODE >14580:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291A cinit CODE >14591:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291C cinit CODE >14597:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291C cinit CODE >14599:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+291E cinit CODE >14600:C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AMI_V00.X.production.o
+__Hspace_0 10000 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hspace_1 511 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hspace_4 600024 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+ADC_SetContext1ThresholdInterruptHandler@InterruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__size_of_UART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_UART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__end_of_ADC_SetActiveClockTuningInterruptHandler 2910 0 CODE 0 text15 dist/default/production\AMI_V00.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\AMI_V00.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AMI_V00.X.production.o
+__end_of_UART1_SetFramingErrorHandler 28E8 0 CODE 0 text4 dist/default/production\AMI_V00.X.production.o
+__end_of_UART1_SetOverrunErrorHandler 28DE 0 CODE 0 text3 dist/default/production\AMI_V00.X.production.o
+_PMD_Initialize 285A 0 CODE 0 text6 dist/default/production\AMI_V00.X.production.o
+UART1_SetOverrunErrorHandler@interruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__size_of_CAN1_OperationModeGet 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_CAN1_OperationModeSet 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lsmallconst 2600 0 SMALLCONST 0 smallconst dist/default/production\AMI_V00.X.production.o
+_ADCP 3D8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_LATA 4BE 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_LATB 4BF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_LATC 4C0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD0 60 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD1 61 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD2 62 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD3 63 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD4 64 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD5 65 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD6 66 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD7 67 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PMD8 68 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_WPUA 401 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_WPUB 409 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_WPUC 411 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_WPUE 421 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+_main 28C8 0 CODE 0 text0 dist/default/production\AMI_V00.X.production.o
+_CAN1_Initialize 2816 0 CODE 0 text9 dist/default/production\AMI_V00.X.production.o
+start FFFC 0 CODE 0 init C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+__size_of_main 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AMI_V00.X.production.o
+_C1CONHbits 101 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1CONTbits 103 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1CONUbits 102 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\AMI_V00.X.production.o
+__end_of_CAN1_BitRateConfiguration 28C8 0 CODE 0 text12 dist/default/production\AMI_V00.X.production.o
+_UART1_ErrorHandler 507 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+_ADC_ConversionComplete_ISR 505 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADC_SetContext1ThresholdInterruptHandler 28FC 0 CODE 0 text14 dist/default/production\AMI_V00.X.production.o
+__accesstop 560 0 ABS 0 - C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+intlevel0 0 0 CODE 0 text C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+intlevel1 0 0 CODE 0 text C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+intlevel2 0 0 CODE 0 text C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+intlevel3 0 0 CODE 0 text C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AMI_V00.X.production.o
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AMI_V00.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\AMI_V00.X.production.o
+__end_of_PMD_Initialize 2882 0 CODE 0 text6 dist/default/production\AMI_V00.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\AMI_V00.X.production.o
+__end_of_ADC_SetContext1ThresholdInterruptHandler 2906 0 CODE 0 text14 dist/default/production\AMI_V00.X.production.o
+_U1ERRIE 2B3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1ERRIR 2B2 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1RXPPS 272 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACCH 3E4 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACCL 3E3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACCU 3E5 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACQH 3EF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACQL 3EE 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON0 3F3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON1 3F4 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON2 3F5 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON3 3F6 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADERRH 3DE 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADERRL 3DD 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADLTHH 3DA 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADLTHL 3D9 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADPREH 3F2 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADPREL 3F1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADRESH 3EB 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADRESL 3EA 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADSTAT 3F7 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADUTHH 3DC 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADUTHL 3DB 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ANSELA 400 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ANSELB 408 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ANSELC 410 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+_C1CONH 101 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1CONL 100 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1CONU 102 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADACTPPS 269 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AMI_V00.X.production.o
+_ADCPbits 3D8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\AMI_V00.X.production.o
+__size_of_CAN1_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_CAN1_BitRateConfiguration 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_INLVLA 404 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_INLVLB 40C 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_INLVLC 414 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_INLVLE 424 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_CANRXPPS 23D 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+UART1_SetFramingErrorHandler@interruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_PIN_MANAGER_Initialize 2742 0 CODE 0 text7 dist/default/production\AMI_V00.X.production.o
+start_initialization 291A 0 CODE 0 cinit dist/default/production\AMI_V00.X.production.o
+_ODCONA 402 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ODCONB 40A 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ODCONC 412 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_OSCFRQ B1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AMI_V00.X.production.o
+_UART1_Initialize 27AE 0 CODE 0 text2 dist/default/production\AMI_V00.X.production.o
+_ADCSEL1 3FC 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADFLTRH 3E2 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADFLTRL 3E1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADPREVH 3E9 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADPREVL 3E8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADSTPTH 3E0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADSTPTL 3DF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_RB4PPS 20D 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_RC6PPS 217 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__end_of_SYSTEM_Initialize 289C 0 CODE 0 text1 dist/default/production\AMI_V00.X.production.o
+_U1CON0bits 2AB 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1BRGH 2AF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1BRGL 2AE 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1CON0 2AB 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1CON1 2AC 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1CON2 2AD 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1FIFO 2B0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_UART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1INTHbits 11D 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1INTTbits 11F 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_ADC_SetActiveClockTuningInterruptHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+_ADC_DefaultADI_ISR 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1FIFOBA 14C 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\AMI_V00.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\AMI_V00.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\AMI_V00.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\AMI_V00.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\AMI_V00.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\AMI_V00.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\AMI_V00.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\AMI_V00.X.production.o
+__Hidloc 200020 0 IDLOC 5 idloc dist/default/production\AMI_V00.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\AMI_V00.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\AMI_V00.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\AMI_V00.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\AMI_V00.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\AMI_V00.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\AMI_V00.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\AMI_V00.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\AMI_V00.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\AMI_V00.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\AMI_V00.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\AMI_V00.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\AMI_V00.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\AMI_V00.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\AMI_V00.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\AMI_V00.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\AMI_V00.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\AMI_V00.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\AMI_V00.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\AMI_V00.X.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\AMI_V00.X.production.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/production\AMI_V00.X.production.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/production\AMI_V00.X.production.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/production\AMI_V00.X.production.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/production\AMI_V00.X.production.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/production\AMI_V00.X.production.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/production\AMI_V00.X.production.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/production\AMI_V00.X.production.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/production\AMI_V00.X.production.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/production\AMI_V00.X.production.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/production\AMI_V00.X.production.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/production\AMI_V00.X.production.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/production\AMI_V00.X.production.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/production\AMI_V00.X.production.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/production\AMI_V00.X.production.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/production\AMI_V00.X.production.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/production\AMI_V00.X.production.o
+__Hbank32 0 0 ABS 0 bank32 dist/default/production\AMI_V00.X.production.o
+__Hbank33 0 0 ABS 0 bank33 dist/default/production\AMI_V00.X.production.o
+__Hbank34 0 0 ABS 0 bank34 dist/default/production\AMI_V00.X.production.o
+__Hbank35 0 0 ABS 0 bank35 dist/default/production\AMI_V00.X.production.o
+__Hbank36 0 0 ABS 0 bank36 dist/default/production\AMI_V00.X.production.o
+__Hbank37 0 0 ABS 0 bank37 dist/default/production\AMI_V00.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AMI_V00.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\AMI_V00.X.production.o
+__smallconst 2600 0 SMALLCONST 0 smallconst C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+__end_of_ADC_SetADIInterruptHandler 291A 0 CODE 0 text16 dist/default/production\AMI_V00.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\AMI_V00.X.production.o
+__Hconfig 300024 0 CONFIG 4 config dist/default/production\AMI_V00.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\AMI_V00.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\AMI_V00.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\AMI_V00.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\AMI_V00.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\AMI_V00.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\AMI_V00.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\AMI_V00.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\AMI_V00.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\AMI_V00.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\AMI_V00.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\AMI_V00.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\AMI_V00.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\AMI_V00.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\AMI_V00.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\AMI_V00.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\AMI_V00.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\AMI_V00.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\AMI_V00.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\AMI_V00.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\AMI_V00.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\AMI_V00.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\AMI_V00.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\AMI_V00.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\AMI_V00.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\AMI_V00.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\AMI_V00.X.production.o
+__Hinit 10000 0 CODE 0 init dist/default/production\AMI_V00.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\AMI_V00.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\AMI_V00.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\AMI_V00.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\AMI_V00.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\AMI_V00.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\AMI_V00.X.production.o
+__Linit FFFC 0 CODE 0 init dist/default/production\AMI_V00.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\AMI_V00.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\AMI_V00.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\AMI_V00.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\AMI_V00.X.production.o
+_C1TRECUbits 136 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_CAN1_BitRateConfiguration 28B4 0 CODE 0 text12 dist/default/production\AMI_V00.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\AMI_V00.X.production.o
+__S0 10000 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__S1 511 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1NBTCFGH 105 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1NBTCFGL 104 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1NBTCFGT 107 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_C1NBTCFGU 106 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_uart1RxLastError 510 0 COMRAM 1 bssCOMRAM dist/default/production\AMI_V00.X.production.o
+__end_of_UART1_Initialize 2816 0 CODE 0 text2 dist/default/production\AMI_V00.X.production.o
+__pnvCOMRAM 501 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+__size_of_UART1_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AMI_V00.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\AMI_V00.X.production.o
+__size_of_ADC_SetContext1ThresholdInterruptHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_SYSTEM_Initialize 2882 0 CODE 0 text1 dist/default/production\AMI_V00.X.production.o
+__Hramtop 2600 0 RAM 0 ramtop dist/default/production\AMI_V00.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\AMI_V00.X.production.o
+CAN1_OperationModeSet@requestMode 50F 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\AMI_V00.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\AMI_V00.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\AMI_V00.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\AMI_V00.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\AMI_V00.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\AMI_V00.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\AMI_V00.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\AMI_V00.X.production.o
+__end_of_CAN1_OperationModeGet 28FC 0 CODE 0 text11 dist/default/production\AMI_V00.X.production.o
+__end_of_CAN1_OperationModeSet 2742 0 CODE 0 text10 dist/default/production\AMI_V00.X.production.o
+_ADC_Initialize 260E 0 CODE 0 text13 dist/default/production\AMI_V00.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__ptext10 26BA 0 CODE 0 text10 dist/default/production\AMI_V00.X.production.o
+__ptext11 28F2 0 CODE 0 text11 dist/default/production\AMI_V00.X.production.o
+__ptext12 28B4 0 CODE 0 text12 dist/default/production\AMI_V00.X.production.o
+__ptext13 260E 0 CODE 0 text13 dist/default/production\AMI_V00.X.production.o
+__ptext14 28FC 0 CODE 0 text14 dist/default/production\AMI_V00.X.production.o
+__ptext15 2906 0 CODE 0 text15 dist/default/production\AMI_V00.X.production.o
+__ptext16 2910 0 CODE 0 text16 dist/default/production\AMI_V00.X.production.o
+__end_of_PIN_MANAGER_Initialize 27AE 0 CODE 0 text7 dist/default/production\AMI_V00.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\AMI_V00.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\AMI_V00.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\AMI_V00.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\AMI_V00.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\AMI_V00.X.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\AMI_V00.X.production.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/production\AMI_V00.X.production.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/production\AMI_V00.X.production.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/production\AMI_V00.X.production.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/production\AMI_V00.X.production.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/production\AMI_V00.X.production.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/production\AMI_V00.X.production.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/production\AMI_V00.X.production.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/production\AMI_V00.X.production.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/production\AMI_V00.X.production.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/production\AMI_V00.X.production.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/production\AMI_V00.X.production.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/production\AMI_V00.X.production.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/production\AMI_V00.X.production.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/production\AMI_V00.X.production.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/production\AMI_V00.X.production.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/production\AMI_V00.X.production.o
+__Lbank32 0 0 ABS 0 bank32 dist/default/production\AMI_V00.X.production.o
+__Lbank33 0 0 ABS 0 bank33 dist/default/production\AMI_V00.X.production.o
+__Lbank34 0 0 ABS 0 bank34 dist/default/production\AMI_V00.X.production.o
+__Lbank35 0 0 ABS 0 bank35 dist/default/production\AMI_V00.X.production.o
+__Lbank36 0 0 ABS 0 bank36 dist/default/production\AMI_V00.X.production.o
+__Lbank37 0 0 ABS 0 bank37 dist/default/production\AMI_V00.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AMI_V00.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\AMI_V00.X.production.o
+UART1_SetErrorHandler@interruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\AMI_V00.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\AMI_V00.X.production.o
+_CAN1_OperationModeGet 28F2 0 CODE 0 text11 dist/default/production\AMI_V00.X.production.o
+_CAN1_OperationModeSet 26BA 0 CODE 0 text10 dist/default/production\AMI_V00.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\AMI_V00.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\AMI_V00.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+stackhi 25FF 0 ABS 0 - C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+stacklo 560 0 ABS 0 - C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+CAN1_OperationModeSet@opMode 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_OSCCON1 AD 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_OSCCON3 AF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_OSCTUNE B0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\AMI_V00.X.production.o
+_ADCON0bits 3F3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON1bits 3F4 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON2bits 3F5 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCON3bits 3F6 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__size_of_ADC_SetADIInterruptHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__pbssCOMRAM 510 0 COMRAM 1 bssCOMRAM dist/default/production\AMI_V00.X.production.o
+__end_of_ADC_Initialize 26BA 0 CODE 0 text13 dist/default/production\AMI_V00.X.production.o
+_PIR1bits 4AF 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PIR2bits 4B0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_PIR4bits 4B2 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_UART1_SetFramingErrorHandler 28DE 0 CODE 0 text4 dist/default/production\AMI_V00.X.production.o
+CAN1_OperationModeSet@status 50E 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_UART1_SetOverrunErrorHandler 28D4 0 CODE 0 text3 dist/default/production\AMI_V00.X.production.o
+_ADC_Context1Thereshld_ISR 503 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+end_of_initialization 291C 0 CODE 0 cinit dist/default/production\AMI_V00.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\AMI_V00.X.production.o
+_ADC_ActiveClockTuning_ISR 501 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\AMI_V00.X.production.o
+_UART1_FramingErrorHandler 50B 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+_UART1_OverrunErrorHandler 509 0 COMRAM 1 nvCOMRAM dist/default/production\AMI_V00.X.production.o
+__end_of_DLC_BYTES 260A 0 SMALLCONST 0 smallconst dist/default/production\AMI_V00.X.production.o
+__Lramtop 2600 0 RAM 0 ramtop dist/default/production\AMI_V00.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\AMI_V00.X.production.o
+__pcinit 291A 0 CODE 0 cinit dist/default/production\AMI_V00.X.production.o
+__ptext0 28C8 0 CODE 0 text0 dist/default/production\AMI_V00.X.production.o
+__ptext1 2882 0 CODE 0 text1 dist/default/production\AMI_V00.X.production.o
+__ptext2 27AE 0 CODE 0 text2 dist/default/production\AMI_V00.X.production.o
+__ptext3 28D4 0 CODE 0 text3 dist/default/production\AMI_V00.X.production.o
+__ptext4 28DE 0 CODE 0 text4 dist/default/production\AMI_V00.X.production.o
+__ptext5 28E8 0 CODE 0 text5 dist/default/production\AMI_V00.X.production.o
+__ptext6 285A 0 CODE 0 text6 dist/default/production\AMI_V00.X.production.o
+__ptext7 2742 0 CODE 0 text7 dist/default/production\AMI_V00.X.production.o
+__ptext8 289C 0 CODE 0 text8 dist/default/production\AMI_V00.X.production.o
+__ptext9 2816 0 CODE 0 text9 dist/default/production\AMI_V00.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\AMI_V00.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\AMI_V00.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\AMI_V00.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\AMI_V00.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\AMI_V00.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\AMI_V00.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\AMI_V00.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\AMI_V00.X.production.o
+_ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\JOSLUI~1\AppData\Local\Temp\xcAsbvk.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\AMI_V00.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AMI_V00.X.production.o
+_UART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADC_SetADIInterruptHandler 2910 0 CODE 0 text16 dist/default/production\AMI_V00.X.production.o
+__psmallconst 2600 0 SMALLCONST 0 smallconst dist/default/production\AMI_V00.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\AMI_V00.X.production.o
+ADC_SetADIInterruptHandler@InterruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+_SLRCONA 403 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_SLRCONB 40B 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_SLRCONC 413 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\AMI_V00.X.production.o
+__end_of__initialization 291C 0 CODE 0 cinit dist/default/production\AMI_V00.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\AMI_V00.X.production.o
+_ADSTATbits 3F7 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_UART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_UART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\AMI_V00.X.production.o
+__pcstackCOMRAM 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__end_of_FIFO 260C 0 SMALLCONST 0 smallconst dist/default/production\AMI_V00.X.production.o
+__end_of_main 28D4 0 CODE 0 text0 dist/default/production\AMI_V00.X.production.o
+_ADC_DefaultActiveClockTuning_ISR 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__end_of_UART1_SetErrorHandler 28F2 0 CODE 0 text5 dist/default/production\AMI_V00.X.production.o
+_ADACT 3F9 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCAP 3F0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCLK 3FA 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCNT 3E6 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCTX 3FB 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADPCH 3EC 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADREF 3F8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADRPT 3E7 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_OSCEN B3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_TRISA 4C6 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_TRISB 4C7 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_TRISC 4C8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_TRISE 4CA 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P1H 2A6 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P1L 2A5 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P2H 2A8 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P2L 2A7 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P3H 2AA 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1P3L 2A9 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1RXB 2A1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1TXB 2A3 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_U1UIR 2B1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\AMI_V00.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\AMI_V00.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\AMI_V00.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\AMI_V00.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\AMI_V00.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\AMI_V00.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+ADC_SetActiveClockTuningInterruptHandler@InterruptHandler 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\AMI_V00.X.production.o
+__end_of_OSCILLATOR_Initialize 28B4 0 CODE 0 text8 dist/default/production\AMI_V00.X.production.o
+__end_of_CAN1_Initialize 285A 0 CODE 0 text9 dist/default/production\AMI_V00.X.production.o
+__initialization 291A 0 CODE 0 cinit dist/default/production\AMI_V00.X.production.o
+_UART1_SetErrorHandler 28E8 0 CODE 0 text5 dist/default/production\AMI_V00.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\AMI_V00.X.production.o
+__Hsmallconst 260E 0 SMALLCONST 0 smallconst dist/default/production\AMI_V00.X.production.o
+_ADC_SetActiveClockTuningInterruptHandler 2906 0 CODE 0 text15 dist/default/production\AMI_V00.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\AMI_V00.X.production.o
+_U1ERRIRbits 2B2 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+_ADCSEL1bits 3FC 0 ABS 0 - dist/default/production\AMI_V00.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\AMI_V00.X.production.o
+_OSCILLATOR_Initialize 289C 0 CODE 0 text8 dist/default/production\AMI_V00.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+nvCOMRAM 1 501 501 10 1
+text13 0 260E 260E 314 1
+init 0 FFFC FFFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 2600 2600 E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
