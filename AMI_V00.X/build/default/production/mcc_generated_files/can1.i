@@ -37672,6 +37672,8 @@ _Bool CAN1_IsRxErrorWarning(void);
 _Bool CAN1_IsRxErrorActive(void);
 # 603 "mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
+
+void CAN1_Read(void);
 # 50 "mcc_generated_files/can1.c" 2
 # 69 "mcc_generated_files/can1.c"
 struct CAN_FIFOREG
@@ -37811,4 +37813,25 @@ void CAN1_Sleep(void)
     C1INTTbits.WAKIE = 1;
 
     CAN1_OperationModeSet(CAN_DISABLE_MODE);
+}
+
+uint8_t lastInfo[10];
+int ind;
+
+void CAN1_Read(void){
+     CAN_MSG_OBJ msg;
+
+        if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
+        {
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            {
+                while(1)
+                {
+                    if(CAN1_IsRxErrorActive() == 0)
+                    {
+# 232 "mcc_generated_files/can1.c"
+                    }
+                }
+            }
+        }
 }

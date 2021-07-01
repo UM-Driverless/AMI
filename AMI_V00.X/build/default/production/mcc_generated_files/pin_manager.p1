@@ -80,6 +80,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29041
 [; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 29041: extern volatile unsigned char U1RXPPS __attribute__((address(0x272)));
 [v _U1RXPPS `Vuc ~T0 @X0 0 e@626 ]
+"1542
+[s S3063 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3063 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"1541
+[u S3062 `S3063 1 ]
+[n S3062 . . ]
+"1553
+[v _LATBbits `VS3062 ~T0 @X0 0 e@1215 ]
+"441 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 441: void BotonPressed(void);
+[v _BotonPressed `(v ~T0 @X0 0 ef ]
+"1873 D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1873:         unsigned OPOL :1;
+[s S3075 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3075 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"1872
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1872:         unsigned :3;
+[u S3074 `S3075 1 ]
+[n S3074 . . ]
+"1884
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1884:         unsigned MD1EN :1;
+[v _PORTAbits `VS3074 ~T0 @X0 0 e@1230 ]
+"1480
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1480:         unsigned TU1MD :1;
+[s S3061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3061 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"1479
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1479:     struct {
+[u S3060 `S3061 1 ]
+[n S3060 . . ]
+"1491
+[v _LATAbits `VS3060 ~T0 @X0 0 e@1214 ]
+"1935
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1935: 
+[s S3077 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3077 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"1934
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1934: __asm("MD1CON1 equ 06Bh");
+[u S3076 `S3077 1 ]
+[n S3076 . . ]
+"1946
+[; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1946:         unsigned MD1CLSYNC :1;
+[v _PORTBbits `VS3076 ~T0 @X0 0 e@1231 ]
 "363 D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3691,19 +3734,99 @@ Version 4.0 HI-TECH Software Intermediate Code
 "120
 [; ;mcc_generated_files/pin_manager.c: 120:     U1RXPPS = 0x17;
 [e = _U1RXPPS -> -> 23 `i `uc ]
-"121
-[; ;mcc_generated_files/pin_manager.c: 121: }
+"122
+[; ;mcc_generated_files/pin_manager.c: 122:     do { LATBbits.LATB5 = 1; } while(0);
+[e :U 3179 ]
+{
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 3178 ]
+"123
+[; ;mcc_generated_files/pin_manager.c: 123:     BotonPressed();
+[e ( _BotonPressed ..  ]
+"124
+[; ;mcc_generated_files/pin_manager.c: 124: }
 [e :UE 3176 ]
 }
-"123
-[; ;mcc_generated_files/pin_manager.c: 123: void PIN_MANAGER_IOC(void)
+"126
+[; ;mcc_generated_files/pin_manager.c: 126: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"124
-[; ;mcc_generated_files/pin_manager.c: 124: {
+"127
+[; ;mcc_generated_files/pin_manager.c: 127: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"125
-[; ;mcc_generated_files/pin_manager.c: 125: }
-[e :UE 3177 ]
+"128
+[; ;mcc_generated_files/pin_manager.c: 128: }
+[e :UE 3180 ]
+}
+"130
+[; ;mcc_generated_files/pin_manager.c: 130: void BotonPressed(void){
+[v _BotonPressed `(v ~T0 @X0 1 ef ]
+{
+[e :U _BotonPressed ]
+[f ]
+"131
+[; ;mcc_generated_files/pin_manager.c: 131:         if(PORTAbits.RA4 == 1){
+[e $ ! == -> . . _PORTAbits 0 4 `i -> 1 `i 3182  ]
+{
+"133
+[; ;mcc_generated_files/pin_manager.c: 133:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 3185 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 3184 ]
+"134
+[; ;mcc_generated_files/pin_manager.c: 134:         }
+}
+[e :U 3182 ]
+"135
+[; ;mcc_generated_files/pin_manager.c: 135:         if(PORTAbits.RA5 == 1){
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 3186  ]
+{
+"137
+[; ;mcc_generated_files/pin_manager.c: 137:             do { LATAbits.LATA5 = 0; } while(0);
+[e :U 3189 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 3188 ]
+"138
+[; ;mcc_generated_files/pin_manager.c: 138:         }
+}
+[e :U 3186 ]
+"139
+[; ;mcc_generated_files/pin_manager.c: 139:         if(PORTBbits.RB2 == 1){
+[e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 3190  ]
+{
+"141
+[; ;mcc_generated_files/pin_manager.c: 141:             do { LATBbits.LATB2 = 0; } while(0);
+[e :U 3193 ]
+{
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 3192 ]
+"142
+[; ;mcc_generated_files/pin_manager.c: 142:         }
+}
+[e :U 3190 ]
+"143
+[; ;mcc_generated_files/pin_manager.c: 143:         if(PORTBbits.RB1 == 1){
+[e $ ! == -> . . _PORTBbits 0 1 `i -> 1 `i 3194  ]
+{
+"145
+[; ;mcc_generated_files/pin_manager.c: 145:             do { LATBbits.LATB1 = 0; } while(0);
+[e :U 3197 ]
+{
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 3196 ]
+"146
+[; ;mcc_generated_files/pin_manager.c: 146:         }
+}
+[e :U 3194 ]
+"147
+[; ;mcc_generated_files/pin_manager.c: 147: }
+[e :UE 3181 ]
 }

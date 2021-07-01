@@ -81,7 +81,7 @@ typedef union {
     uint8_t status;
 }uart1_status_t;
 
-
+int page;
 /**
   Section: UART1 APIs
 */

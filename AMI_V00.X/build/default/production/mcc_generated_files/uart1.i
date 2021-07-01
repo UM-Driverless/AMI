@@ -37497,6 +37497,8 @@ typedef union {
     };
     uint8_t status;
 }uart1_status_t;
+
+int page;
 # 110 "mcc_generated_files/uart1.h"
 void UART1_Initialize(void);
 # 158 "mcc_generated_files/uart1.h"
@@ -37589,6 +37591,7 @@ void UART1_Initialize(void)
     UART1_SetOverrunErrorHandler(UART1_DefaultOverrunErrorHandler);
     UART1_SetErrorHandler(UART1_DefaultErrorHandler);
 
+    page = 0;
     uart1RxLastError.status = 0;
 
 }
@@ -37641,6 +37644,7 @@ void UART1_Write(uint8_t txData)
 {
     while(0 == PIR4bits.U1TXIF)
     {
+
     }
 
     U1TXB = txData;
