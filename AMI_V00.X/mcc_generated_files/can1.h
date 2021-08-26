@@ -602,7 +602,7 @@ bool CAN1_IsRxErrorActive(void);
 */
 void CAN1_Sleep(void);
 
-void CAN1_Read(void);
+
 
 
 

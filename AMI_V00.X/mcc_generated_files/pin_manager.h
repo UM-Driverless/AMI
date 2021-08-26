@@ -438,7 +438,7 @@ void PIN_MANAGER_Initialize (void);
 void PIN_MANAGER_IOC(void);
 
 
-void BotonPressed(void);
+
 #endif // PIN_MANAGER_H
 /**
  End of File

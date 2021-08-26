@@ -37488,9 +37488,6 @@ unsigned char __t3rd16on(void);
 void PIN_MANAGER_Initialize (void);
 # 438 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-
-
-void BotonPressed(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
 
@@ -37557,30 +37554,8 @@ void PIN_MANAGER_Initialize(void)
     RB4PPS = 0x46;
     RC6PPS = 0x20;
     U1RXPPS = 0x17;
-
-    do { LATBbits.LATB5 = 1; } while(0);
-    BotonPressed();
 }
 
 void PIN_MANAGER_IOC(void)
 {
-}
-
-void BotonPressed(void){
-        if(PORTAbits.RA4 == 1){
-
-            do { LATAbits.LATA4 = 0; } while(0);
-        }
-        if(PORTAbits.RA5 == 1){
-
-            do { LATAbits.LATA5 = 0; } while(0);
-        }
-        if(PORTBbits.RB2 == 1){
-
-            do { LATBbits.LATB2 = 0; } while(0);
-        }
-        if(PORTBbits.RB1 == 1){
-
-            do { LATBbits.LATB1 = 0; } while(0);
-        }
 }

@@ -3,9 +3,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"441 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 441: void BotonPressed(void);
-[v _BotonPressed `(v ~T0 @X0 0 ef ]
 "363 D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3522,9 +3519,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68860
 [; ;D:/Mplab/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 68860: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"84 ./mcc_generated_files/uart1.h
-[; ;./mcc_generated_files/uart1.h: 84: int page;
-[v _page `i ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "49 main.c
 [; ;main.c: 49: void main(void)
@@ -3544,15 +3538,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 65:     {
 {
 "67
-[; ;main.c: 67:         BotonPressed();
-[e ( _BotonPressed ..  ]
-"68
-[; ;main.c: 68:     }
+[; ;main.c: 67:     }
 }
 [e :U 3182 ]
 [e $U 3183  ]
 [e :U 3184 ]
-"69
-[; ;main.c: 69: }
+"68
+[; ;main.c: 68: }
 [e :UE 3181 ]
 }

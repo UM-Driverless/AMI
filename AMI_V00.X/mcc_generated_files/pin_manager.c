@@ -127,7 +127,9 @@ void PIN_MANAGER_IOC(void)
 {   
 }
 
-void BotonPressed(void){  
+void BotonPressed(void){
+    while(1){
+     
         if(BOTON1_GetValue() == 1){
             //Do Something
             BOTON1_SetLow();
@@ -143,7 +145,9 @@ void BotonPressed(void){
         if(BOTON4_GetValue() == 1){
             //Do Something
             BOTON4_SetLow();
-        }           
+        }
+        
+    }
 }
 
 /**

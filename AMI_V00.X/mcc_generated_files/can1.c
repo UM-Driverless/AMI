@@ -205,34 +205,6 @@ void CAN1_Sleep(void)
     CAN1_OperationModeSet(CAN_DISABLE_MODE);
 }
 
-uint8_t lastInfo[10];
-int ind; //lastInfo Index
 
-void CAN1_Read(void){
-     CAN_MSG_OBJ msg;
-                
-        if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
-        {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
-            {
-                while(1) 
-                {
-                    if(CAN1_IsRxErrorActive() == false)
-                    {
-                       // if(CAN1_ReceivedMessageCountGet() > 0) 
-                        
-                        /*
-                        while(msg != null)
-                        {
-                            lastInfo(ind) = &msg;
-                            ind++;
-                           // CAN1_Receive(&msg);
-                        }
-                         * */
-                    }
-                }
-            }
-        }
-}
 
 

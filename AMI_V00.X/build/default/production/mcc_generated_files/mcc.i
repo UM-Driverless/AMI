@@ -37493,9 +37493,6 @@ unsigned char __t3rd16on(void);
 void PIN_MANAGER_Initialize (void);
 # 438 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-
-
-void BotonPressed(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
 
@@ -37709,8 +37706,6 @@ typedef union {
     };
     uint8_t status;
 }uart1_status_t;
-
-int page;
 # 110 "mcc_generated_files/uart1.h"
 void UART1_Initialize(void);
 # 158 "mcc_generated_files/uart1.h"
@@ -37860,8 +37855,6 @@ _Bool CAN1_IsRxErrorWarning(void);
 _Bool CAN1_IsRxErrorActive(void);
 # 603 "mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
-
-void CAN1_Read(void);
 # 57 "mcc_generated_files/mcc.h" 2
 # 72 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);

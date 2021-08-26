@@ -119,7 +119,6 @@ void UART1_Initialize(void)
     UART1_SetOverrunErrorHandler(UART1_DefaultOverrunErrorHandler);
     UART1_SetErrorHandler(UART1_DefaultErrorHandler);
 
-    page = 0;
     uart1RxLastError.status = 0;
 
 }
