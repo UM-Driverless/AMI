@@ -127,7 +127,6 @@ void PIN_MANAGER_IOC(void)
 {   
 }
 
-//17.07.2021 Alvaro funcion para botones
 void BotonPressed(void){  
         if(BOTON1_GetValue() == 1){
             //Do Something
